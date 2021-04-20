@@ -1,0 +1,15 @@
+def armStrong(n):
+    i = len(str(n))
+    sum = 0
+    temp = n
+    while (temp > 0):
+        digit = temp % 10
+        sum = sum + digit ** i
+        temp = int(temp / 10)
+    if n == sum:
+        print (n,'Armstrong number')
+    else:
+        print(n, 'Not an Armstrong number')
+
+armStrong(int(input("Enter the number")))
+    

@@ -1,0 +1,9 @@
+def getSum(n):
+    x = 0
+    while (n != 0):
+        x = x + int(n%10)
+        n = int(n/10)
+    print (x)
+    print("Sum of the digits", x)
+getSum(int(input("Enter the digit:")))
+
